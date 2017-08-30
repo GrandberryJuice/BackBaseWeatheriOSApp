@@ -119,6 +119,14 @@ extension FavoriteLocationsVC : UITableViewDelegate, UITableViewDataSource {
         }
         return 0
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            let favoritePlace = fetchResultsController.object(at: indexPath as IndexPath)
+            context.delete(favoritePlace)
+            ad.saveContext()
+        }
+    }
 }
 
 //MARK: FetchedResultsController Functions
