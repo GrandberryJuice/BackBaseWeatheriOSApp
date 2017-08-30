@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73590511F5640C300D4B857 /* FavoriteLocationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590501F5640C300D4B857 /* FavoriteLocationsVC.swift */; };
+		C73590551F5640F200D4B857 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590541F5640F200D4B857 /* Constants.swift */; };
+		C73590571F56465B00D4B857 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590561F56465B00D4B857 /* MapVC.swift */; };
+		C735905A1F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C73590581F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld */; };
+		C73590A51F569EA500D4B857 /* FavoritePlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590A41F569EA500D4B857 /* FavoritePlacesCell.swift */; };
+		C73590AF1F56B3C400D4B857 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590AE1F56B3C400D4B857 /* DataService.swift */; };
+		C73590B11F56B4E300D4B857 /* WeatherForcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B01F56B4E300D4B857 /* WeatherForcast.swift */; };
+		C73590B41F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B21F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift */; };
+		C73590B51F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B31F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift */; };
+		C794F23F1F563D45005800D2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794F23E1F563D45005800D2 /* CustomButton.swift */; };
 		C7EB21201F554E68005B767D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB211F1F554E68005B767D /* AppDelegate.swift */; };
-		C7EB21221F554E68005B767D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB21211F554E68005B767D /* ViewController.swift */; };
+		C7EB21221F554E68005B767D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB21211F554E68005B767D /* HomeVC.swift */; };
 		C7EB21251F554E68005B767D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EB21231F554E68005B767D /* Main.storyboard */; };
 		C7EB21271F554E68005B767D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7EB21261F554E68005B767D /* Assets.xcassets */; };
 		C7EB212A1F554E68005B767D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7EB21281F554E68005B767D /* LaunchScreen.storyboard */; };
@@ -34,9 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C73590501F5640C300D4B857 /* FavoriteLocationsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteLocationsVC.swift; sourceTree = "<group>"; };
+		C73590541F5640F200D4B857 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C73590561F56465B00D4B857 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		C73590591F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BackBoneWeatheriOSApp.xcdatamodel; sourceTree = "<group>"; };
+		C73590A41F569EA500D4B857 /* FavoritePlacesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePlacesCell.swift; sourceTree = "<group>"; };
+		C73590AE1F56B3C400D4B857 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C73590B01F56B4E300D4B857 /* WeatherForcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForcast.swift; sourceTree = "<group>"; };
+		C73590B21F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FavoritePlaces+CoreDataClass.swift"; path = "../FavoritePlaces+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C73590B31F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FavoritePlaces+CoreDataProperties.swift"; path = "../FavoritePlaces+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C794F23E1F563D45005800D2 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C7EB211C1F554E68005B767D /* BackBoneWeatheriOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackBoneWeatheriOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EB211F1F554E68005B767D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7EB21211F554E68005B767D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C7EB21211F554E68005B767D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		C7EB21241F554E68005B767D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7EB21261F554E68005B767D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7EB21291F554E68005B767D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +94,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C73590521F5640CD00D4B857 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				C73590AE1F56B3C400D4B857 /* DataService.swift */,
+			);
+			name = DataService;
+			sourceTree = "<group>";
+		};
+		C73590531F5640DA00D4B857 /* Misc. */ = {
+			isa = PBXGroup;
+			children = (
+				C73590541F5640F200D4B857 /* Constants.swift */,
+				C7EB211F1F554E68005B767D /* AppDelegate.swift */,
+			);
+			name = Misc.;
+			sourceTree = "<group>";
+		};
+		C794F23B1F563CD9005800D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C73590B21F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift */,
+				C73590B31F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift */,
+				C73590581F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld */,
+				C73590B01F56B4E300D4B857 /* WeatherForcast.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C794F23C1F563CE0005800D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C794F23E1F563D45005800D2 /* CustomButton.swift */,
+				C73590A41F569EA500D4B857 /* FavoritePlacesCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C794F23D1F563CE5005800D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB21211F554E68005B767D /* HomeVC.swift */,
+				C73590501F5640C300D4B857 /* FavoriteLocationsVC.swift */,
+				C73590561F56465B00D4B857 /* MapVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C7EB21131F554E68005B767D = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +164,11 @@
 		C7EB211E1F554E68005B767D /* BackBoneWeatheriOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				C7EB211F1F554E68005B767D /* AppDelegate.swift */,
-				C7EB21211F554E68005B767D /* ViewController.swift */,
+				C73590531F5640DA00D4B857 /* Misc. */,
+				C73590521F5640CD00D4B857 /* DataService */,
+				C794F23D1F563CE5005800D2 /* Controller */,
+				C794F23C1F563CE0005800D2 /* View */,
+				C794F23B1F563CD9005800D2 /* Model */,
 				C7EB21231F554E68005B767D /* Main.storyboard */,
 				C7EB21261F554E68005B767D /* Assets.xcassets */,
 				C7EB21281F554E68005B767D /* LaunchScreen.storyboard */,
@@ -193,6 +263,7 @@
 				TargetAttributes = {
 					C7EB211B1F554E68005B767D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JDJW8889MB;
 						ProvisioningStyle = Automatic;
 					};
 					C7EB212F1F554E68005B767D = {
@@ -259,8 +330,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EB21221F554E68005B767D /* ViewController.swift in Sources */,
+				C73590551F5640F200D4B857 /* Constants.swift in Sources */,
+				C73590571F56465B00D4B857 /* MapVC.swift in Sources */,
+				C7EB21221F554E68005B767D /* HomeVC.swift in Sources */,
+				C73590AF1F56B3C400D4B857 /* DataService.swift in Sources */,
+				C73590511F5640C300D4B857 /* FavoriteLocationsVC.swift in Sources */,
 				C7EB21201F554E68005B767D /* AppDelegate.swift in Sources */,
+				C73590A51F569EA500D4B857 /* FavoritePlacesCell.swift in Sources */,
+				C73590B11F56B4E300D4B857 /* WeatherForcast.swift in Sources */,
+				C73590B41F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift in Sources */,
+				C73590B51F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift in Sources */,
+				C794F23F1F563D45005800D2 /* CustomButton.swift in Sources */,
+				C735905A1F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JDJW8889MB;
 				INFOPLIST_FILE = BackBoneWeatheriOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BackBoneWeatheriOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,7 +509,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JDJW8889MB;
 				INFOPLIST_FILE = BackBoneWeatheriOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BackBoneWeatheriOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +592,7 @@
 				C7EB21461F554E69005B767D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7EB21471F554E69005B767D /* Build configuration list for PBXNativeTarget "BackBoneWeatheriOSAppTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +601,7 @@
 				C7EB21491F554E69005B767D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7EB214A1F554E69005B767D /* Build configuration list for PBXNativeTarget "BackBoneWeatheriOSAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,8 +610,22 @@
 				C7EB214C1F554E69005B767D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C73590581F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C73590591F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodel */,
+			);
+			currentVersion = C73590591F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodel */;
+			path = BackBoneWeatheriOSApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C7EB21141F554E68005B767D /* Project object */;
 }
