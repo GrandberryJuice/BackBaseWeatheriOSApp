@@ -11,31 +11,45 @@ import Foundation
 class WeatherForcast {
     
     //TODO: check data type when parsing JSON
-    private var _temperature:String
-    private var _humidity:String
-    private var _rainPercentage:String
-    private var _wind:String
+    private var _temperature:String?
+    private var _humidity:String?
+    private var _rainPercentage:String?
+    private var _wind:String?
     
-    var temperature:String {
+    var temperature:String? {
         return _temperature
     }
     
-    var humidity:String {
+    var humidity:String? {
         return _humidity
     }
     
-    var rainPercentage:String {
+    var rainPercentage:String? {
         return _rainPercentage
     }
     
-    var wind:String {
+    var wind:String? {
         return _wind
     }
     
-    init(temp:String, humidity:String, rainPercentage:String, wind:String) {
-        _temperature = temp
-        _humidity = humidity
-        _rainPercentage = rainPercentage
-        _wind = wind
+    
+
+    
+    init(data:Dictionary<String,AnyObject>) {
+        if let humidityData = data["humidity"] as? Int {
+            _humidity = "\(humidityData)"
+        }
+        
+        if let temperature = data["humidity"] as? Int {
+            _temperature = "\(temperature)"
+        }
+        
+        if let wind = data["windspeed"] as? Int {
+            _wind = "\(wind)"
+        }
+        
+        if let rainPercentage = data["weatherType"] as? Int {
+            _rainPercentage = "\(rainPercentage)"
+        }
     }
 }

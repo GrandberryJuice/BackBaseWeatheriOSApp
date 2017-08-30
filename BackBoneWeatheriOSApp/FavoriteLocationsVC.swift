@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import MapKit
 
 class FavoriteLocationsVC: UIViewController {
     
@@ -48,8 +49,14 @@ class FavoriteLocationsVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == favoriteLocationToMapVC {
-            if let destiantion = segue.destination as? MapVC {
-                destiantion.updateFavoritePlacesDelegate = self
+            if let destination = segue.destination as? MapVC {
+                destination.updateFavoritePlacesDelegate = self
+            }
+        } else if segue.identifier == FavoriteLocationToForcastVC {
+            if let destination = segue.destination as? ForcastVC {
+                if let favoriteLocation = sender as? FavoritePlaces {
+                    destination.favoritePlaces = favoriteLocation
+                }
             }
         }
     }
@@ -60,14 +67,14 @@ class FavoriteLocationsVC: UIViewController {
     }
     
     //MARK: Parse and save location Data
-    func parseLocationData(location:Dictionary<String,AnyObject>) {
+    func parseLocationData(location:Dictionary<String,AnyObject>, latlon:CLLocation) {
         let favoritePlacesContext = FavoritePlaces(context: context)
      
         if let streetAddress = location["Street"] as? String {
             favoritePlacesContext.street = streetAddress
         }
         
-        if let zip = location["ZIP"] as? Int {
+        if let zip = location["ZIP"] as? String {
             favoritePlacesContext.zipcode = "\(zip)"
         }
         
@@ -82,14 +89,20 @@ class FavoriteLocationsVC: UIViewController {
         if let city = location["City"] as? String {
             favoritePlacesContext.city = city
         }
+        print(latlon.coordinate.longitude)
+        print(latlon.coordinate.latitude)
+        favoritePlacesContext.longitude = "\(latlon.coordinate.longitude)"
+        favoritePlacesContext.latitude = "\(latlon.coordinate.latitude)"
+      
+        
         ad.saveContext()
         self.tableView.reloadData()
     }
 }
 
 extension FavoriteLocationsVC : UpdateFavoritePlacesDelegate {
-    func updateDataFromMapViewController(locationData: Dictionary<String, AnyObject>) {
-       parseLocationData(location: locationData)
+    func updateDataFromMapViewController(locationData: Dictionary<String, AnyObject>,location:CLLocation) {
+        parseLocationData(location: locationData, latlon:location)
     }
 }
 
@@ -125,6 +138,13 @@ extension FavoriteLocationsVC : UITableViewDelegate, UITableViewDataSource {
             let favoritePlace = fetchResultsController.object(at: indexPath as IndexPath)
             context.delete(favoritePlace)
             ad.saveContext()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let objs = fetchResultsController.fetchedObjects, objs.count > 0  {
+            let item = objs[indexPath.row]
+            performSegue(withIdentifier: FavoriteLocationToForcastVC, sender: item)
         }
     }
 }

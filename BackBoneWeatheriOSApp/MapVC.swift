@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 protocol UpdateFavoritePlacesDelegate {
-    func updateDataFromMapViewController(locationData:Dictionary<String , AnyObject>)
+    func updateDataFromMapViewController(locationData:Dictionary<String , AnyObject>, location: CLLocation)
 }
 
 class MapVC: UIViewController {
@@ -46,10 +46,10 @@ class MapVC: UIViewController {
     }
 
     
-    func displayLocationInfo(placemark: CLPlacemark) {
+    func displayLocationInfo(placemark: CLPlacemark, location:CLLocation) {
         locationManager.stopUpdatingLocation()
         if let address = placemark.addressDictionary as? Dictionary<String,AnyObject> {
-            updateFavoritePlacesDelegate?.updateDataFromMapViewController(locationData: address)
+            updateFavoritePlacesDelegate?.updateDataFromMapViewController(locationData: address, location:location)
         }
     }
     
@@ -73,7 +73,7 @@ class MapVC: UIViewController {
             if let placemarks = placemarks {
                 if placemarks.count > 0 {
                     let pm = placemarks[0] as CLPlacemark
-                    self.displayLocationInfo(placemark: pm)
+                    self.displayLocationInfo(placemark: pm, location:loc)
                 }
             }
         })

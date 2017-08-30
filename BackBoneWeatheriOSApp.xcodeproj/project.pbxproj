@@ -14,8 +14,10 @@
 		C73590A51F569EA500D4B857 /* FavoritePlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590A41F569EA500D4B857 /* FavoritePlacesCell.swift */; };
 		C73590AF1F56B3C400D4B857 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590AE1F56B3C400D4B857 /* DataService.swift */; };
 		C73590B11F56B4E300D4B857 /* WeatherForcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B01F56B4E300D4B857 /* WeatherForcast.swift */; };
-		C73590B41F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B21F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift */; };
-		C73590B51F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B31F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift */; };
+		C73590B71F57258B00D4B857 /* ForcastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B61F57258B00D4B857 /* ForcastVC.swift */; };
+		C73590BA1F5736FA00D4B857 /* FavoritePlaces+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B81F5736FA00D4B857 /* FavoritePlaces+CoreDataClass.swift */; };
+		C73590BB1F5736FA00D4B857 /* FavoritePlaces+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590B91F5736FA00D4B857 /* FavoritePlaces+CoreDataProperties.swift */; };
+		C73590BD1F574BDC00D4B857 /* weatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73590BC1F574BDC00D4B857 /* weatherCell.swift */; };
 		C794F23F1F563D45005800D2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C794F23E1F563D45005800D2 /* CustomButton.swift */; };
 		C7EB21201F554E68005B767D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB211F1F554E68005B767D /* AppDelegate.swift */; };
 		C7EB21221F554E68005B767D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7EB21211F554E68005B767D /* HomeVC.swift */; };
@@ -51,8 +53,10 @@
 		C73590A41F569EA500D4B857 /* FavoritePlacesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePlacesCell.swift; sourceTree = "<group>"; };
 		C73590AE1F56B3C400D4B857 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		C73590B01F56B4E300D4B857 /* WeatherForcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForcast.swift; sourceTree = "<group>"; };
-		C73590B21F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FavoritePlaces+CoreDataClass.swift"; path = "../FavoritePlaces+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C73590B31F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FavoritePlaces+CoreDataProperties.swift"; path = "../FavoritePlaces+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C73590B61F57258B00D4B857 /* ForcastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForcastVC.swift; sourceTree = "<group>"; };
+		C73590B81F5736FA00D4B857 /* FavoritePlaces+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FavoritePlaces+CoreDataClass.swift"; path = "../FavoritePlaces+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C73590B91F5736FA00D4B857 /* FavoritePlaces+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FavoritePlaces+CoreDataProperties.swift"; path = "../FavoritePlaces+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C73590BC1F574BDC00D4B857 /* weatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherCell.swift; sourceTree = "<group>"; };
 		C794F23E1F563D45005800D2 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		C7EB211C1F554E68005B767D /* BackBoneWeatheriOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackBoneWeatheriOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7EB211F1F554E68005B767D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,8 +118,8 @@
 		C794F23B1F563CD9005800D2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C73590B21F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift */,
-				C73590B31F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift */,
+				C73590B81F5736FA00D4B857 /* FavoritePlaces+CoreDataClass.swift */,
+				C73590B91F5736FA00D4B857 /* FavoritePlaces+CoreDataProperties.swift */,
 				C73590581F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld */,
 				C73590B01F56B4E300D4B857 /* WeatherForcast.swift */,
 			);
@@ -127,6 +131,7 @@
 			children = (
 				C794F23E1F563D45005800D2 /* CustomButton.swift */,
 				C73590A41F569EA500D4B857 /* FavoritePlacesCell.swift */,
+				C73590BC1F574BDC00D4B857 /* weatherCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				C7EB21211F554E68005B767D /* HomeVC.swift */,
 				C73590501F5640C300D4B857 /* FavoriteLocationsVC.swift */,
 				C73590561F56465B00D4B857 /* MapVC.swift */,
+				C73590B61F57258B00D4B857 /* ForcastVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -333,13 +339,15 @@
 				C73590551F5640F200D4B857 /* Constants.swift in Sources */,
 				C73590571F56465B00D4B857 /* MapVC.swift in Sources */,
 				C7EB21221F554E68005B767D /* HomeVC.swift in Sources */,
+				C73590B71F57258B00D4B857 /* ForcastVC.swift in Sources */,
 				C73590AF1F56B3C400D4B857 /* DataService.swift in Sources */,
+				C73590BB1F5736FA00D4B857 /* FavoritePlaces+CoreDataProperties.swift in Sources */,
 				C73590511F5640C300D4B857 /* FavoriteLocationsVC.swift in Sources */,
 				C7EB21201F554E68005B767D /* AppDelegate.swift in Sources */,
+				C73590BD1F574BDC00D4B857 /* weatherCell.swift in Sources */,
 				C73590A51F569EA500D4B857 /* FavoritePlacesCell.swift in Sources */,
 				C73590B11F56B4E300D4B857 /* WeatherForcast.swift in Sources */,
-				C73590B41F57052100D4B857 /* FavoritePlaces+CoreDataClass.swift in Sources */,
-				C73590B51F57052100D4B857 /* FavoritePlaces+CoreDataProperties.swift in Sources */,
+				C73590BA1F5736FA00D4B857 /* FavoritePlaces+CoreDataClass.swift in Sources */,
 				C794F23F1F563D45005800D2 /* CustomButton.swift in Sources */,
 				C735905A1F567A1000D4B857 /* BackBoneWeatheriOSApp.xcdatamodeld in Sources */,
 			);

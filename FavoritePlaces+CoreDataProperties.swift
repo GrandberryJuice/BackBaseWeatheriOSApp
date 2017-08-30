@@ -22,5 +22,7 @@ extension FavoritePlaces {
     @NSManaged public var street: String?
     @NSManaged public var city: String?
     @NSManaged public var address: String?
+    @NSManaged public var latitude: String?
+    @NSManaged public var longitude: String?
 
 }
